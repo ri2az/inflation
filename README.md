@@ -25,10 +25,25 @@ Ce projet Streamlit permet de visualiser l'évolution de l'inflation en France �
 
 ---
 
-## ⚙️ Installation
 
-### 1. Cloner le dépôt
+## 🛠️ Installation
+### 1️⃣ Cloner le dépôt
+```sh
+git clone https://github.com/ri2az/inflation.git
+cd inflation
+```
 
-```bash
-git clone https://github.com/ton-utilisateur/inflation-france-streamlit.git
-cd inflation-france-streamlit
+### 2️⃣ Installer les dépendances
+Assurez-vous d'avoir Python 3 installé, puis exécutez :
+```sh
+pip install -r requirements.txt
+```
+
+### 3️⃣ Lancer l'application
+```sh
+streamlit run app.py
+```
+
+### 4️⃣ Lancer l'application sur Streamlit !
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://riaaz-btc.streamlit.app/)
