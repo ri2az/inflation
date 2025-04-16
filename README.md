@@ -1,17 +1,29 @@
 # 📊 Visualisation de l'inflation en France (IPCH, IPC, ISJ)
 
-Ce projet Streamlit permet de visualiser l'évolution de l'inflation en France à partir des données publiées par l'[INSEE](https://www.insee.fr/fr/statistiques/8558558), via un scraping automatique des indices **IPCH**, **ISJ** et **IPC**.
+Ce projet Streamlit permet de visualiser l'évolution du **prix du supercarburant sans plomb 95 (SP95)** en France et de le comparer aux **indices d'inflation officiels** : **IPC**, **IPCH**, et **ISJ**.
 
 ---
 
 ## 🚀 Fonctionnalités
 
-- 📈 Graphique de l’inflation en **style XKCD** (dessiné à la main)
-- 🔎 **Filtrage par année**
-- ✅ Sélection des **indices à afficher** (IPCH, ISJ, IPC)
-- 📋 Affichage des données sous forme de tableau
-- 💾 Export des données **filtrées en CSV**
-- ℹ️ Description claire des **cycles de l’inflation** et des **indices**
+- 📈 **Graphique interactif (Plotly)** ou ✏️ **style XKCD dessiné à la main**
+- 🎛️ Filtrage dynamique :
+- Sélection des courbes à afficher
+- Normalisation (base 100) pour comparaison relative
+- Sélection d'années spécifiques
+- 📥 Export CSV des données filtrées
+- 📆 Données à jour directement depuis l’INSEE
+
+---
+
+## 🔢 Données utilisées
+
+- **Prix SP95** : fichier CSV nettoyé à partir des séries INSEE ([série 000849411](https://www.insee.fr/fr/statistiques/serie/000849411))
+- **Indices d’inflation** :
+  - IPC : Indice des prix à la consommation (France)
+  - IPCH : Indice européen harmonisé
+  - ISJ : Indice spécifique des jeunes
+  - Source INSEE : [Statistiques inflation](https://www.insee.fr/fr/statistiques/8558558)
 
 ---
 
@@ -22,6 +34,7 @@ Ce projet Streamlit permet de visualiser l'évolution de l'inflation en France �
 - [Pandas](https://pandas.pydata.org/)
 - [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/)
 - [Requests](https://docs.python-requests.org/)
+- [plotly](https://plotly.com//)
 
 ---
 
