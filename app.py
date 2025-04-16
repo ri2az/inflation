@@ -11,7 +11,7 @@ st.set_page_config(page_title="SP95 vs Inflation", layout="wide")
 st.title("📊 Comparaison : Prix SP95 vs Inflation (IPC, IPCH, ISJ)")
 
 # -------------------- 1. Charger SP95 --------------------
-CSV_SP95 = "prix_sp95_nettoye.csv"
+CSV_SP95 = "prix_sp95_mensuel_insee.csv"
 
 @st.cache_data
 def fetch_sp95_data():
